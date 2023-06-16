@@ -1,111 +1,129 @@
 :root {
-    --main-color: rgb(230, 228, 223);
-    --primary-color: 	#968997;
-    --hover: #5a4d3e;
-    --black: rgb(50, 50, 51);
-    --white: rgb(242, 238, 231);
-    --light-bg: #f3efec;
-    --dark-bg: rgba(0, 0, 0, .7);
-    --border: .1rem solid #aaa;
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --main-color: rgb(230, 228, 223);
+  --primary-color: #968997;
+  --hover: #5a4d3e;
+  --black: rgb(50, 50, 51);
+  --white: rgb(242, 238, 231);
+  --light-bg: #f3efec;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
+  font-family: "Roboto", sans-serif;
+  font-family: "Didact Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth; 
-    scroll-padding-top: 6rem; 
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 html::-webkit-scrollbar {
-    width: .6rem;
+  width: 0.6rem;
 }
 
 html::-webkit-scrollbar-track {
-    background: var(--white);
+  background: var(--white);
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 section {
-    padding: 5rem 7%;
+  padding: 5rem 7%;
 }
 
 .heading {
-    text-align: center;
-    color: var(--primary-color);
-    text-transform: capitalize;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    font-size: 4rem;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  text-transform: lowercase;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-size: 4rem;
 }
 
 /* HEADER */
 
 .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    position: sticky;
-    top:0; left:0; right: 0;
-    background: var(--main-color);
-    z-index: 1000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--main-color);
+  z-index: 1000;
 }
 
 .header .logo {
-    font-family: 'Italiana', serif;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: var(--black);
-    text-transform: uppercase;
-    /* text-transform: lowercase;
+  font-family: "Italiana", serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+  text-transform: uppercase;
+  /* text-transform: lowercase;
     text-transform: capitalize; */
 }
 
-#close-navbar  {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    font-size: 4rem;
-    cursor: pointer;
-    color: var(--black);
-    display: none;
+#close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
 }
 
 .header .navbar a {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.7rem;
-    margin-left: 2rem;
-    color: var(--black);
-    text-transform: lowercase;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: var(--black);
+  text-transform: lowercase;
 }
 
 .header .navbar a:hover {
-    padding-bottom: 0.5rem;
-    color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  color: var(--primary-color);
+  /* color: var(--black); */
 }
 
 #menu-btn {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: var(--black);
-    display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
+a.book {
+    background: var(--primary-color);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+a.book:hover {
+    color: black;
+    background: var(--hover);
 }
 
 /* HEADER END */
@@ -113,93 +131,402 @@ section {
 /* HOME SECTION */
 
 .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(../assets/mainImg.png);
-    background-size: cover;
-    /* background-position: center; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../assets/mainImg.png);
+  background-size: cover;
+  /* background-position: center; */
 }
 
 .home .content {
-    max-width: 60rem;
-    margin-top: -260px;
+  max-width: 60rem;
+  margin-top: -260px;
 }
 
 .home .content span {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 9rem;
-    letter-spacing: .5rem;
-    padding-bottom: .5rem;
-    color: var(--main-color);
-    text-transform: uppercase;
-    /* text-transform: lowercase; */
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 9rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  /* text-transform: lowercase; */
 }
 
 .home .content h3 {
-    font-family: 'Didact Gothic', sans-serif;
-    color: var(--primary-color);
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: .23rem;
-    /* font-weight: bold; */
+  font-family: "Didact Gothic", sans-serif;
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.23rem;
+  /* font-weight: bold; */
 }
 
 .timetable {
-    color: var(--main-color);
-    font-size: 1.92rem;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 50%;
-    right: -10rem; }
-    @media (max-width: 37.5em) {
-      .timetable {
-        font-size: 1rem;
-        right: -5rem; } }
+  color: var(--main-color);
+  font-size: 1.92rem;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: -10rem;
+}
+@media (max-width: 37.5em) {
+  .timetable {
+    font-size: 1rem;
+    right: -5rem;
+  }
+}
 
 /* HOME END */
 
 /* ABOUT */
 
-.about .row {
+.row .aboutIconsContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* margin-left: 100px; */
+}
+
+.row .aboutIconsContainer .aboutIcons {
+  padding: 3rem 10rem 10rem 10rem;
+}
+
+.aboutIconsContainer .aboutIcons img {
+  height: 500px;
+}
+
+/* .expertIcon,
+.chairIcon {
+  margin-left: 55px;
+} */
+
+.aboutIconsContainer .aboutIcons .iconsHeading {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+  padding-top: 2rem;
+}
+
+.iconsText {
+  font-size: 1.6rem;
+  color: rgb(68, 68, 68);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+/* END ABOUT */
+
+/* TEAM */
+
+.ourTeam {
+    background: rgb(211, 211, 211);
+}
+
+.ourTeam .teamImgContainer  {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stylistNameContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: var(--black);
+    width: 50%;
+    height: 10%;
+    color: var(--white)
+}
+
+.stylistName {
+    text-transform: capitalize;
+}
+
+.stylistName, .jobTitle {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* TEAM END */
+
+/* LOOKS */
+
+.looksGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .modelsGallery {
+    height: 10px;
+} */
+
+.modelPic {
+    height: 600px;
+    transition: transform 0.2s linear;
+}
+
+.modelPic:hover {
+    transform: scale(1.05);
+}
+
+.modelPicBottom {
+    margin-top: 15%;
+}
+
+
+/* PROMO */
+
+.promosContainer {
+    background-image: url(../assets/promoImg.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-content: center;
-    margin-left: 100px;
 }
 
-.about .row .aboutImgs {
-    /* flex: 1 1 109rem; */
-    /* width: 50%; */
-    height: 260px;
+.colorPromo {
+    font-size: 3.5rem;
+    margin-left: 165px;
+    color: var(--primary-color);
+  }
+
+  .tenOff {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+
+  }
+
+  .promoPara {
+    font-size: 4rem;
+    margin-left: 120px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(68, 68, 68);
+  }
+
+  .bookAppointmentBtn {
+    width: 75%;
+    margin: 20px 0 0 115px;
+    opacity: 1;
+    transition: 0.1s;
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+
+  }
+
+  .bookAppointmentBtn:hover {
+    opacity: 0.6;
+    text-transform: uppercase;
+    background: var(--hover);
+  }
+
+/* PROMO ENDS */
+
+/* blog */
+
+.blogSection {
+    height: 80vh;
+    width: 100%;
+
 }
 
-.about .row .about-content {
-    /* flex: 1 1 51rem; */
-    padding: 5rem;
-}
+.blogSection .blogContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.about .row .about-content h3 {
+  .mediaPlayer {
+    height: 400px;
+  }
+  
+  .momentum {
     font-size: 3rem;
     color: var(--primary-color);
-    text-align: center;
-}
-
-.about .row .about-content p {
+  }
+  
+  .servicesPara {
     font-size: 1.6rem;
     color: rgb(68, 68, 68);
-    padding: 1rem 0;
     line-height: 1.8;
+    margin: 30px 0px;
+  }
+  
+  .readMoreBtn {
+    /* background: var(--primary-color);
+    color: var(--white);
+    height: 50px;
+    margin-left: 10px;
+    width: 200px;
+    font-size: 1.5rem;
+    border-radius: 10px; */
+
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+  }
+
+  .readMoreBtn:hover {
+    opacity: 0.6;
+    text-transform: uppercase;
+    background: var(--hover);
+  }
+
+  /* BOOKING */
+
+  .visitSection {
+    background-image: url(../assets/salonBuilding.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .visitSection .row {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    justify-content: center;
+  }
+
+  .visitSection .row form {
+    flex: .25 .25 20rem;
+    border: 0.1rem solid var(--primary-color);
+    padding: 2rem;
+  }
+
+  .bookingTitle {
+    color: var(--white);
+    font-size: 5rem;
+  }
+  
+  .visitSection .row .bookText {
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .bookText {
+    font-weight: 700;
+  }
+
+  .visitSection .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--white);
+    border: var(--dark-bg);
+  }
+
+  .visitSection .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--dark-bg);
+    text-transform: none;
+    background: none;
+  }
+
+  .submitBtn {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+  }
+
+  .submitBtn:hover {
+    background: var(--hover);
+  }
+
+  /* END BOOKING SECTION */
+
+  /* FOOTER */
+.footerSection {
+    background: var(--main-color);
 }
 
-/* end about */
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
 
-/* services */
+.contacUs {
+    text-align: start;
+}
 
+ .contacUsText {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
 
+.contactUsParaText  {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--black);
+    /* padding: .2rem 0; */
+}
 
+.share {
+    text-align: end;
+    margin-top: -165px;
+}
 
+.findUs {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
 
+.footerIcon {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-right: 10px;
+}
+
+.shareText {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-bottom: 15px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 10px;
+}
 
 
 

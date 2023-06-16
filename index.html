@@ -1,130 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elysian Hair Studio</title>
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Italiana&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Italiana&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!-- HEADER -->
 
-        <section class="header">
-            <a href="#" class="logo">elysian</a>
+    <section class="header">
+      <a href="#" class="logo">elysian</a>
 
-            <nav class="navbar">
-                <div id="close-navbar" class="fas fa-times" ></div>
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
 
-                <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#services">services</a>
-                <a href="#lookbook">lookbook</a>
-                <a href="#pricing">team</a>
-                <a href="#blog">blog</a>
-                <a href="#visit">book</a>
-                <a href="#contact">review</a>
-            </nav>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#team">our team</a>
+        <a href="#lookbook">looks</a>
+        <a href="#promos">promos</a>
+        <a href="#blog">blog</a>
+        <!-- <a href="#review">review</a> -->
+        <a class="book" href="#book">book</a>
+      </nav>
 
-            <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
 
-        </section>
+    <!-- HOME SECTION -->
 
-        <!-- HOME SECTION -->
+    <section class="home" id="home">
+      <div class="content">
+        <span>blonde & highlight </span>
+        <h3>divide your uniqueness by your hair in style</h3>
 
-        <section class="home" id="home">
+        <div class="timetable">
+          <p>MON - SUN: 7:00AM - 8:00PM</p>
+        </div>
+      </div>
+    </section>
 
-            <div class="content">
-                <span>blonde & highlight </span>
-                <h3>divide your uniqueness by your hair in style</h3>
+    <!-- ABOUT SECTION-->
 
-                <div class="timetable">
-                    <p>MON - SUN: 7:00AM - 8:00PM</p>
+    <section class="aboutSection" id="about">
+      <h2 class="aboutHeading heading">about us</h2>
+
+      <div class="row">
+        <div class="aboutIconsContainer">
+          <div class="aboutIcons">
+            <img
+              class="expertIcon"
+              src="./assets/expert.png"
+              alt="beautician icon"
+            />
+            <h3 class="iconsHeading">expert beauticians</h3>
+            <p p class="iconsText">
+              Beauty experts sit omet semiadicing elit maeceras sa faubus mollis
+              expo sail and beauty extern interdum
+            </p>
+          </div>
+
+          <div class="aboutIcons">
+            <img
+              class="chairIcon"
+              src="./assets/chair.png"
+              alt="beauty salon chair icon"
+            />
+            <h3 class="iconsHeading">quality service</h3>
+            <p class="iconsText">
+              Hair styling services sit omet semiadicing elit maeceras sa faubus
+              mollis expo sail and beauty internum
+            </p>
+          </div>
+
+          <div class="aboutIcons">
+            <img src="./assets/products.png" alt="night cream icon" />
+            <h3 class="iconsHeading">beauty products</h3>
+            <p class="iconsText">
+              Hair color or product sit omet semiadicing elit maeceras sa faubus
+              mollis expo sail beauty externum
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our team -->
+    <section class="ourTeam" id="team">
+        <h2 class="ourTeamHeading heading">our team</h2>
+
+        <div class="teamImgContainer">
+
+            <div class="stylistGallery">
+                <img class="stylistImg" src="./assets/StylerOne.png" alt="">
+                <div class="stylistNameContainer">
+                    <h3 class="stylistName">rita williams</h3>
+                    <span class="jobTitle">-colourist</span>
                 </div>
             </div>
 
-
-
-        </section>
-
-        <!-- ABOUT SECTION-->
-
-        <section class="about" id="about">
-
-            <h1 class="heading">about us</h1>
-
-            <div class="row">
-
-                <div class="image-container">
-                    <img class="aboutImgs" src="../assets/expert.png" alt="stylist draw">
-
-                    <div class="about-content">
-
-                        <h3 class="about-text expert-text">expert beauticians</h3>
-                        <p>Beauty experts sit omet semiadicing elit <br> maeceras sa faubus mollis expo sail <br> and beauty extern interdum
-                        </p>
-
-                    </div>
+            <div class="stylistGallery">
+                <img class="stylistImg" src="./assets/StylerTwo.png" alt="">
+                <div class="stylistNameContainer">
+                    <h3 class="stylistName">ayesha lake</h3>
+                    <span class="jobTitle">-stylist</span>
                 </div>
-
-                <div class="image-container"> 
-                    <img class="aboutImgs" src="../assets/chair.png" alt="salon chair">
-
-                    <div class="about-content">
-
-                        <h3 class="about-text">quality services</h3>
-                        <p>Hair styling services sit omet semiadicing <br> elit maeceras sa faubus mollis expo sail and <br> beauty extern interdum</p>
-
-
-                    </div>
-                   
-                </div>
-        
-                <div class="image-container">
-                    <img class="aboutImgs" src="../assets/products.png" alt="beaty product">
-
-                    <div class="about-content">
-
-                        <h3 class="about-text beauty-text">beauty products</h3>
-                        <p>Hair color or product sit omet semiadicing <br> elit maeceras sa faubus mollis expo sail and <br> beauty extern interdum</p>
-                    </div>
-                </div>
-
             </div>
-        </section>
+
+            <div class="stylistGallery">
+                <img class="stylistImg" src="./assets/StylerThree.png" alt="">
+                <div class="stylistNameContainer">
+                    <h3 class="stylistName">michelle perry</h3>
+                    <span class="jobTitle">-beautcian</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- looks -->
+
+    <section class="LooksSection" id="lookbook">
+        <h2 class="LooksSectionHeading heading">featured looks</h2>
+
+        <div class="looksGallery">
+
+            <div class="modelsGallery">
+                <img class="modelPic" src="./assets/lookbook1.png" alt="">
+            </div>
+
+            <div class="modelsGallery">
+                <img class="modelPic" src="./assets/lookbook2.png" alt="">
+            </div>
+
+            <div class="modelsGallery">
+                <img class="modelPic" src="./assets/lookbook3.png" alt="">
+            </div>
+
+            <div class="modelsGallery">
+                <img class="modelPic modelPicBottom" src="./assets/lookbook4.png" alt="">
+            </div>
+
+            <div class="modelsGallery">
+                <img class="modelPic modelPicBottom" class="modelPic" src="./assets/lookbook5.png" alt="">
+            </div>
+
+            <div class="modelsGallery">
+                <img class="modelPic modelPicBottom" src="./assets/lookbook6.png" alt="">
+            </div>
+            
+        </div>
+
+    </section>
 
 
-       
+    <!-- promo section -->
 
+    <section class="promosContainer" id="promos">
+        <div class="promoContent">
+            <span class="colorPromo">colour day offer!</span>
+            <p class="promoPara"><span class="tenOff">10% off</span> on haircut <br> color and highlight</p>
+            <button class="bookAppointmentBtn btn">-book appointment</button>
+        </div>
+		
+	</section>
 
+    <!-- blog -->
 
+    <section class="blogSection" id="blog">
+
+        <h2 class="blogHeading heading">blog</h2>
+
+        <div class="blogContainer">
+
+            <div class="blogBox">
+                <img class="mediaPlayer" src="./assets/media.png" alt="media player">
+            </div>
+
+            <div class="blogBox">
+                <h3 class="momentum">make your <br> own momentum</h3>
+                <p class="servicesPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, autem ex <br> voluptatem obcaecati eius et
+                    debitis corporis quos quo voluptatibus <br> ipsa repellat. Iure harum asperiores assumenda suscipit
+                    reprehenderit <br> nemo in, non eveniet, culpa qui optio dolorum natus illum temporibus aut <br> nulla ad commodi beatae ipsam.</p>
+                <button class="readMoreBtn btn">-read more</button>
     
+            </div>
+
+		</div>
+
+	</section>
+
+    <!-- book a visit -->
+
+    <section class="visitSection" id="book">
+
+        <h3 class="bookingTitle heading">come see us</h3>
+
+        <div class="row">
+
+            <form action="">
+
+                <h3 class="bookText">book your visit today</h3>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="your name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="your email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="subject">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="message">
+                </div>
+
+                <input type="submit" value="send a message" class="submitBtn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footerSection">
+
+        <div class="footerContainer">
+
+            <div class="footerBox">
+                <div class="contacUs">
+
+                    <h3 class="contacUsText">contact us</h3>
+                    <p class="contactUsParaText ri-map-pin-line">123 w main st <br>dallas, texas</p>
+                    <!-- <p class="contactUsParaText">dallas, Texas</p> -->
+                    <p class="contactUsParaText ri-phone-line">555-555-555</p>
+                    <a href="#" class="contactUsParaText link ri-mail-line">support@elysian.com</a>
+
+                </div>
+
+                <div class="footerBox">
+
+                    <div class="share">
+                        <h3 class="findUs">find us here</h3>
+                        <p class="shareText">Lorem ipsum dolor sit, amet <br>consectetur adipisicing elit.<br>otam, et! Lorem ipsum dolor <br>amet consectetur adipisicing <br> </p>
+                        <a href="#" class="footerIcon ri-facebook-line"></a>
+                        <a href="#" class="footerIcon ri-twitter-line"></a>
+                        <a href="#" class="footerIcon ri-instagram-line"></a>
+                        <a href="#" class="footerIcon ri-linkedin-line"></a>
+                    </div>
     
+                </div>
+    
+            </div>
+        </div>
+        <div>
+             <h5 class="copyright">2023 ruben arcos | all rights reserved</h5>
+        </div>
+
+    </footer>
+   
 
 
 
-
-</body>
+  </body>
 </html>
+
+
+
