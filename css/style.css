@@ -141,7 +141,7 @@ a.book:hover {
 
 .home .content {
   max-width: 60rem;
-  margin-top: -260px;
+  margin-top: -305px;
 }
 
 .home .content span {
@@ -513,6 +513,7 @@ a.book:hover {
     font-size: 2rem;
     line-height: 2rem;
     margin-right: 10px;
+    color: var(--black);
 }
 
 .shareText {
@@ -525,8 +526,127 @@ a.book:hover {
     text-align: center;
     font-size: 1.5rem;
     color: var(--primary-color);
-    padding: 10px;
+    padding: 10git spx;
 }
+
+/* FOOTER END */
+
+
+/* MEDIA QUERIES */
+
+/* mobile */
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home  {
+        background: url(../assets/mainImg.png) repeat-x;
+        background-size: cover;
+        
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    div.content > h3 > .divide {
+        font-size: 2.5rem;
+        color: crimson;
+    }
+
+    .ourTeam .teamImgContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .teamImgContainer .stylistGallery img {
+        margin: 5px 0;
+        width: 150px;
+    }
+
+    .promosContainer {
+        background-image: url(../assets/promoImg.png) repeat-x;
+        background-size: cover;
+    }
+
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    
+    #menu-btn{
+        display: inline-block;
+    }
+
+     .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 30rem;
+        background: var(--white);
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        z-index: 1200;
+      }
+      .header .navbar #close-navbar {
+        display: block;
+      }
+      .header .navbar.active {
+        right: 0;
+      }
+      
+      .header .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+}
+
+/* desktop */
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header .navbar a {
+        font-size: 1.7rem;
+    }
+
+    .home .content {
+        margin-top: -400px;
+    }
+
+    .home .content span {
+        font-size: 6.8rem;
+        margin-top: -400px;
+    }
+
+    .home .content h3 {
+        letter-spacing: 0;
+    }
+
+    section {
+        padding: 3rem 3rem;
+    }
+}
+
+
+/* huge */
 
 
 
